@@ -23,10 +23,10 @@ public class AccountEntity {
     private String password;
 
     @OneToMany(mappedBy = "account")
-    Set<MessageEntity> messageEntities;
+    private Set<MessageEntity> messageEntities;
 
     @OneToMany(mappedBy = "account")
-    Set<ChatParticipantEntity> chatParticipantEntities;
+    private Set<ChatParticipantEntity> chatParticipantEntities;
 
     @CreationTimestamp
     private Instant createdAt;

@@ -22,13 +22,16 @@ public class RoomEntity {
 
     private String name;
 
+    @Enumerated(EnumType.STRING)
+    private RoomType type;
+
     private Long lastMessageId;
 
     @OneToMany(mappedBy = "room")
-    Set<MessageEntity> messageEntities;
+    private Set<MessageEntity> messageEntities;
 
     @OneToMany(mappedBy = "room")
-    Set<ChatParticipantEntity> chatParticipantEntities;
+    private Set<ChatParticipantEntity> chatParticipantEntities;
 
     @CreationTimestamp
     private Instant createdAt;
