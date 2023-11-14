@@ -1,4 +1,4 @@
-package co.ilsrbn.chat.api.chat;
+package co.ilsrbn.chat.api.chatParicipant;
 
 import co.ilsrbn.chat.api.account.AccountEntity;
 import co.ilsrbn.chat.api.room.RoomEntity;
@@ -16,8 +16,8 @@ import java.time.Instant;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "chats")
-public class ChatEntity {
+@Table(name = "chat_participants")
+public class ChatParticipantEntity {
     @Id
     @GeneratedValue
     private Long id;

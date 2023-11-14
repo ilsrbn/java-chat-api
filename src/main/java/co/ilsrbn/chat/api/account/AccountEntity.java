@@ -1,5 +1,5 @@
 package co.ilsrbn.chat.api.account;
-import co.ilsrbn.chat.api.chat.ChatEntity;
+import co.ilsrbn.chat.api.chatParicipant.ChatParticipantEntity;
 import co.ilsrbn.chat.api.message.MessageEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,7 +26,7 @@ public class AccountEntity {
     Set<MessageEntity> messageEntities;
 
     @OneToMany(mappedBy = "account")
-    Set<ChatEntity> chatEntities;
+    Set<ChatParticipantEntity> chatParticipantEntities;
 
     @CreationTimestamp
     private Instant createdAt;
