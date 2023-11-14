@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  java-chat-db:
+    image: postgres:latest
+    container_name: java-chat-db
+    restart: no
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: java-chat-db
+    volumes:
+      - java-chat-data:/var/lib/postgresql/data
+    ports:
+      - "12000:5432"
+
+volumes:
+  java-chat-data:

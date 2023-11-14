@@ -1,0 +1,16 @@
+# postgresql details
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:12000/java-chat-db
+    username: admin
+    password: secret
+    driver-class-name: org.postgresql.Driver
+
+  # create and drop table, good for testing, production set to none or comment it
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
