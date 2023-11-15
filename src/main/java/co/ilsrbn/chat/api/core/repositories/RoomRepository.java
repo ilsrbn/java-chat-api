@@ -1,8 +1,8 @@
-package co.ilsrbn.chat.api.account;
+package co.ilsrbn.chat.api.core.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AccountRepository extends JpaRepository<AccountEntity, Long> {
+public interface RoomRepository extends JpaRepository<RoomRepository, Long> {
 }

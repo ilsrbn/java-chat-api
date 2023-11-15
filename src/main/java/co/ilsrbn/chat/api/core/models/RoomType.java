@@ -1,4 +1,4 @@
-package co.ilsrbn.chat.api.room;
+package co.ilsrbn.chat.api.core.models;
 
 public enum RoomType {
     PRIVATE,

@@ -1,6 +1,4 @@
-package co.ilsrbn.chat.api.account;
-import co.ilsrbn.chat.api.chatParicipant.ChatParticipantEntity;
-import co.ilsrbn.chat.api.message.MessageEntity;
+package co.ilsrbn.chat.api.core.models;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

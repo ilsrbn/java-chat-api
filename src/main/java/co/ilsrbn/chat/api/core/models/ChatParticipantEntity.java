@@ -1,7 +1,5 @@
-package co.ilsrbn.chat.api.chatParicipant;
+package co.ilsrbn.chat.api.core.models;
 
-import co.ilsrbn.chat.api.account.AccountEntity;
-import co.ilsrbn.chat.api.room.RoomEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
