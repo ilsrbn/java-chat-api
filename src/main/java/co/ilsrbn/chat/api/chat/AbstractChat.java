@@ -4,13 +4,12 @@ import co.ilsrbn.chat.api.core.dtos.AccountDTO;
 import co.ilsrbn.chat.api.core.dtos.MessageDTO;
 import co.ilsrbn.chat.api.core.models.MessageEntity;
 import co.ilsrbn.chat.api.core.repositories.MessageRepository;
-import org.springframework.stereotype.Service;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public abstract class AbstractChat implements IChat {
-    private MessageRepository messageRepository;
+    private final MessageRepository messageRepository;
 
     public AbstractChat(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
